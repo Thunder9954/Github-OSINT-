@@ -13,7 +13,7 @@
 
 *"Enterprise-grade GitHub OSINT with AI scoring, multi-search, and advanced analytics"*
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-https://gosint.onrender.com-blueviolet)](https://gosint.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-https://sosint.pythonanywhere.com-blueviolet)](https://sosint.pythonanywhere.com)
 [![Features](https://img.shields.io/badge/Key_Features-7+-brightgreen)](#key-features)
 [![Installation](https://img.shields.io/badge/Quick_Setup-5_Minutes-orange)](#installation--setup)
 
@@ -58,7 +58,7 @@ Traditional GitHub search lacks intelligence in ranking results. Users spend hou
 ## 🚀 **Live Demo**
 
 ### **🌐 Access the Live Application**
-**Live URL:** [https://gosint.onrender.com](https://gosint.onrender.com)
+**Live URL:** [https://sosint.pythonanywhere.com](https://sosint.pythonanywhere.com)
 
 ### **What You Can Test in Demo:**
 1. **7 Search Types** - Try all search endpoints
@@ -121,6 +121,21 @@ Accessible from Results page via **Advanced Analytics** button:
 - **Commit Details** (`/details/commit/<owner>/<repo>/<sha>`)
 - **User Details** (`/details/user/<username>`)
 
+### **4.1) Flowchart Viewer (Beta V3)**
+- **Viewer Page**: `/flowchart/repository/<owner>/<repo>`
+- **Generate API**: `POST /api/flowchart/repository/<owner>/<repo>`
+- **Download PNG**: `GET /download/flowchart/repository/<owner>/<repo>`
+
+#### **Viewer capabilities**
+- Zoom in/out/reset + drag-to-pan
+- Regenerate flowchart without leaving the page
+- Download high-quality PNG
+
+#### **Options**
+- `layout`: `dot`, `twopi`, `fdp`, `sfdp`, `neato`
+- `routes`: include HTTP route nodes/edges (when enabled)
+- `external`: include external dependency nodes/edges (when enabled)
+
 ### **5) Saved Queries (100% Working)**
 - **Save Last Search** - One-click save with optional custom name
 - **Query Replay** - Re-execute saved queries (`/query/run/<id>`)
@@ -153,7 +168,9 @@ topic:machine-learning is:public archived:false size:>1000
 ### **AI Search (Gemini-powered)**
 - Uses Google's Gemini API when configured
 - Intelligent query understanding
-- Safe fallback to multi-search when AI unavailable
+- Safe fallback when AI is unavailable / quota limited:
+  - heuristic query builder, and
+  - NLP multi-search across repository/releases/code/users/issues/commits
 - Configurable model (default: `gemini-2.5-pro`)
 
 ### **Releases Search**
@@ -221,7 +238,6 @@ merge:false hash:abc123 message:"security fix"
 
 ## 🏗️ **Architecture & Technology Stack**
 
-
 ### **Technology Stack**
 - **Backend Framework**: Python Flask 2.3+
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
@@ -240,7 +256,10 @@ requests==2.32.3
 werkzeug==3.0.4
 python-dotenv==1.0.1
 Flask-Session==0.8.0
+cachelib
 gunicorn==22.0.0
+python-telegram-bot
+graphviz==0.20.3
 ```
 
 ---
@@ -314,6 +333,7 @@ python -c "from database import init_db; init_db()"
 python main.py
 ```
 Open: `http://127.0.0.1:5000/`
+      'http://LAN - IP /'
 
 #### **Production Mode (with Gunicorn):**
 ```bash
@@ -509,6 +529,11 @@ app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 - `GET /details/issue/<owner>/<repo>/<issue_id>` - Issue/PR details
 - `GET /details/commit/<owner>/<repo>/<sha>` - Commit details
 
+### **Flowchart Routes (Beta V3)**
+- `GET /flowchart/repository/<owner>/<repo>` - Flowchart Viewer page
+- `POST /api/flowchart/repository/<owner>/<repo>` - Generate/refresh flowchart image
+- `GET /download/flowchart/repository/<owner>/<repo>` - Download PNG
+
 ### **Utility Routes**
 - `GET|POST /feedback` - Feedback submission
 - `GET /api/check-username` - Username availability check
@@ -639,7 +664,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## **Ready to Transform Your GitHub OSINT Workflow?**
 
-[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-https://gosint.onrender.com-blue?style=for-the-badge&logo=pythonanywhere)](https://gosint.onrender.com)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-https://sosint.pythonanywhere.com-blue?style=for-the-badge&logo=pythonanywhere)](https://sosint.pythonanywhere.com)
 [![Get Started](https://img.shields.io/badge/GET_STARTED-Install_Now-green?style=for-the-badge&logo=github)](#installation--setup)
 [![Email](https://img.shields.io/badge/Contact-purn872008@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:purn872008@gmail.com)
 
@@ -654,7 +679,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 📞 **Support & Contact**
 
 ### **Getting Help**
-- **Live Demo**: [https://gosint.onrender.com](https://gosint.onrender.com)
+- **Live Demo**: [https://sosint.pythonanywhere.com](https://sosint.pythonanywhere.com)
 - **Email Support**: purn872008@gmail.com
 - **GitHub Issues**: Report bugs or request features
 - **Documentation**: This README and code comments
@@ -677,14 +702,14 @@ For enterprise support, custom deployments, or consulting:
 
 If you find this tool useful, please consider starring the repository to show your support!
 
-**Try it now:** [https://gosint.onrender.com](https://gosint.onrender.com)
+**Try it now:** [https://sosint.pythonanywhere.com](https://sosint.pythonanywhere.com)
 
 </div>
 
 ---
 
-**Copyright © 2024 Purn Vadodariya. All rights reserved.**  
+**Copyright © 2025 Purn Vadodariya. All rights reserved.**  
 
-**Live Application:** [https://gosint.onrender.com](https://gosint.onrender.com)  
+**Live Application:** [https://sosint.pythonanywhere.com](https://sosint.pythonanywhere.com)  
 **Contact Email:** purn872008@gmail.com  
 **GitHub Repository:** https://github.com/Thunder9954/GitHub-Advanced-Search-OSINT.git
