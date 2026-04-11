@@ -1,4 +1,4 @@
-# **GitHub Advanced Search OSINT Tool** (Beta V3)
+# **GitHub Advanced Search OSINT Tool** (Beta V6)
 
 <div align="center">
 
