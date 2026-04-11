@@ -13,7 +13,7 @@
 
 *"Enterprise-grade GitHub OSINT with AI scoring, multi-search, and advanced analytics"*
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-https://sosint.pythonanywhere.com-blueviolet)](https://sosint.pythonanywhere.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-https://mosint.pythonanywhere.com-blueviolet)](https://mosint.pythonanywhere.com/)
 [![Features](https://img.shields.io/badge/Key_Features-7+-brightgreen)](#key-features)
 [![Installation](https://img.shields.io/badge/Quick_Setup-5_Minutes-orange)](#installation--setup)
 
@@ -664,7 +664,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## **Ready to Transform Your GitHub OSINT Workflow?**
 
-[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-https://sosint.pythonanywhere.com-blue?style=for-the-badge&logo=pythonanywhere)](https://sosint.pythonanywhere.com)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-https://mosint.pythonanywhere.com/)](https://mosint.pythonanywhere.com/)
 [![Get Started](https://img.shields.io/badge/GET_STARTED-Install_Now-green?style=for-the-badge&logo=github)](#installation--setup)
 [![Email](https://img.shields.io/badge/Contact-purn872008@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:purn872008@gmail.com)
 
@@ -679,7 +679,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 📞 **Support & Contact**
 
 ### **Getting Help**
-- **Live Demo**: [https://sosint.pythonanywhere.com](https://sosint.pythonanywhere.com)
+- **Live Demo**: [https://mosint.pythonanywhere.com/](https://mosint.pythonanywhere.com/)
 - **Email Support**: purn872008@gmail.com
 - **GitHub Issues**: Report bugs or request features
 - **Documentation**: This README and code comments
@@ -702,7 +702,7 @@ For enterprise support, custom deployments, or consulting:
 
 If you find this tool useful, please consider starring the repository to show your support!
 
-**Try it now:** [https://sosint.pythonanywhere.com](https://sosint.pythonanywhere.com)
+**Try it now:** [https://mosint.pythonanywhere.com/](https://mosint.pythonanywhere.com/)
 
 </div>
 
@@ -710,6 +710,6 @@ If you find this tool useful, please consider starring the repository to show yo
 
 **Copyright © 2025 Purn Vadodariya. All rights reserved.**  
 
-**Live Application:** [https://sosint.pythonanywhere.com](https://sosint.pythonanywhere.com)  
+**Live Application:** [https://mosint.pythonanywhere.com/](https://mosint.pythonanywhere.com/)  
 **Contact Email:** purn872008@gmail.com  
 **GitHub Repository:** https://github.com/Thunder9954/GitHub-Advanced-Search-OSINT.git
